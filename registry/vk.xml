@@ -6148,6 +6148,8 @@ typedef void <name>CAMetalLayer</name>;
         <type requires="vk_video/vulkan_video_codec_h264std_encode.h" name="StdVideoEncodeH264RefMgmtFlags"/>
         <type requires="vk_video/vulkan_video_codec_h264std_encode.h" name="StdVideoEncodeH264RefListModEntry"/>
         <type requires="vk_video/vulkan_video_codec_h264std_encode.h" name="StdVideoEncodeH264RefPicMarkingEntry"/>
+        <type requires="vk_video/vulkan_video_codec_h264std_encode.h" name="StdVideoEncodeH264WeightTable"/>
+        <type requires="vk_video/vulkan_video_codec_h264std_encode.h" name="StdVideoEncodeH264WeightTableFlags"/>
         <type category="struct" name="VkVideoEncodeH264SessionParametersAddInfoEXT" structextends="VkVideoSessionParametersUpdateInfoKHR">
             <member values="VK_STRUCTURE_TYPE_VIDEO_ENCODE_H264_SESSION_PARAMETERS_ADD_INFO_EXT"><type>VkStructureType</type><name>sType</name></member>
             <member optional="true">const <type>void</type>*                                                               <name>pNext</name></member>
@@ -6271,6 +6273,8 @@ typedef void <name>CAMetalLayer</name>;
         <type requires="vk_video/vulkan_video_codec_h265std_encode.h" name="StdVideoEncodeH265SliceSegmentHeaderFlags"/>
         <type requires="vk_video/vulkan_video_codec_h265std_encode.h" name="StdVideoEncodeH265ReferenceInfoFlags"/>
         <type requires="vk_video/vulkan_video_codec_h265std_encode.h" name="StdVideoEncodeH265ReferenceModificationFlags"/>
+        <type requires="vk_video/vulkan_video_codec_h265std_encode.h" name="StdVideoEncodeH265WeightTable"/>
+        <type requires="vk_video/vulkan_video_codec_h265std_encode.h" name="StdVideoEncodeH265WeightTableFlags"/>
         <type category="struct" name="VkVideoEncodeH265SessionParametersAddInfoEXT" structextends="VkVideoSessionParametersUpdateInfoKHR">
             <member values="VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_SESSION_PARAMETERS_ADD_INFO_EXT"><type>VkStructureType</type><name>sType</name></member>
             <member optional="true">const <type>void</type>*                                               <name>pNext</name></member>
@@ -6856,7 +6860,7 @@ typedef void <name>CAMetalLayer</name>;
             <member optional="true" noautovalidity="true"><type>void</type>*                                                    <name>pNext</name></member>
             <member><type>VkBool32</type>                                                                                       <name>subpassMergeFeedback</name></member>
         </type>
-        <type category="struct" name="VkPipelinePropertiesIdentifierEXT" structextends="VkBaseOutStructure">
+        <type category="struct" name="VkPipelinePropertiesIdentifierEXT">
             <member values="VK_STRUCTURE_TYPE_PIPELINE_PROPERTIES_IDENTIFIER_EXT"><type>VkStructureType</type> <name>sType</name></member>
             <member optional="true"><type>void</type>*              <name>pNext</name></member>
             <member><type>uint8_t</type>                            <name>pipelineIdentifier</name>[<enum>VK_UUID_SIZE</enum>]</member>
